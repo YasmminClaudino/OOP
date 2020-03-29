@@ -30,15 +30,14 @@ public class Program {
 		System.out.println("TRIANGLE Y " + areay);
 		System.out.println(max);
 		
+		scan.close();		
 }
 	
 	public static double area(double a, double b, double c) {
 		double p, area;
 		
-		p = (a+b+c)/2.0;
-		area = Math.sqrt(p * (p-a) * (p-b) *(p-c));
-		
-		
+		p = (a + b + c)/2.0;
+		area = Math.sqrt((p * (p -a) * (p -b) * (p-c)));
 		return area;
 		
 		

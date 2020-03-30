@@ -1,27 +1,33 @@
 package entities;
 
 public class Product {
-	
+
 	public String name;
 	public double price;
 	public int quantity;
 	
+	public Product(String name, double price, int quantity) {
+		this.name = name;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
 	public double totalValueInStock() {
 		return (price * quantity);
 	}
-	
-	public void addProductsQuantity (int value) {
-		quantity+=value;
-	}	
-	
+
+	public void addProductsQuantity(int value) {
+		quantity += value;
+	}
+
 	public void removeProducts(int value) {
-		quantity-=value;
+		quantity -= value;
 	}
-	
+
 	public String toString() {
-		return ("Name: " + name + " Price: " + String.format("%.2f", price) + " Quantity in Stock: " + 
-				quantity + " Total amount: " + String.format("%.2f", totalValueInStock()) );
-		
+		return ("Name: " + name + " Price: " + String.format("%.2f", price) + " Quantity in Stock: " + quantity
+				+ " Total amount: " + String.format("%.2f", totalValueInStock()));
+
 	}
-	
+
 }

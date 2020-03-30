@@ -7,14 +7,16 @@ public class ProductApplication {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int stock;
-		Product product = new Product();
+		
 		System.out.println("Insert the product data");
 		System.out.print("Name: ");
-		product.name = sc.next();
+		String name = sc.next();
 		System.out.print("Price: " );
-		product.price = sc.nextDouble();
+		double price = sc.nextDouble();
 		System.out.print("Quantity in stock: ");
-		product.quantity = sc.nextInt();
+		int quantity = sc.nextInt();
+		
+		Product product = new Product(name, price, quantity);
 		
 		System.out.println("Product Data: " + product);
 		

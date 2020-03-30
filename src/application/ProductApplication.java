@@ -30,6 +30,15 @@ public class ProductApplication {
 		product.removeProducts(stock);
 		System.out.println("Updated data: " + product);
 		
+		System.out.print("update the new name and price of product ");
+		name = sc.next();
+		product.setName(name);
+		price = sc.nextDouble();
+		product.setPrice(price);
+		
+		System.out.println("New product data: " + product);
+		
+		
 		sc.close();
 		
 	}

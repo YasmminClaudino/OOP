@@ -28,10 +28,6 @@ public class Product {
 		return this.price;
 	}
 
-	public void setQuantity(int quantity) {
-		this.quantity = quantity;
-	}
-
 	public int getQuantity() {
 		return this.quantity;
 	}

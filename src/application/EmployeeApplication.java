@@ -7,14 +7,16 @@ public class EmployeeApplication {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Employee emp = new Employee();
+	
 		double percentagem;
 		System.out.print("Name: ");
-		emp.name = sc.nextLine();
+		String name = sc.nextLine();
 		System.out.print("Gross Salary: ");
-		emp.grossSalary = sc.nextDouble();
+		double grossSalary = sc.nextDouble();
 		System.out.print("Tax: ");
-		emp.tax = sc.nextDouble();
+		double tax = sc.nextDouble();
+		Employee emp = new Employee(name, grossSalary, tax);
+	
 		
 		System.out.println("Employee data: " + emp);
 		

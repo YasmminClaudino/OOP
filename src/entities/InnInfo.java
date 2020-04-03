@@ -17,5 +17,5 @@ public class InnInfo {
 	public String getEmail() {
 		return email;
 	}
-
+ 
 }

@@ -6,7 +6,6 @@ import entities.InnInfo;
 public class InnApplication {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Scanner scan = new Scanner(System.in);
 		int totalRooms = 10;
@@ -37,13 +36,20 @@ public class InnApplication {
 	
 	public static void printInfo(InnInfo[] innInfo) {
 		System.out.println("Busy Rooms: ");
+		/*
+		for (InnInfo i: innInfo) {
+			if (i != null) {
+				System.out.printf("%d: %s, %s \n", 1,
+						i.getName(), i.getEmail());
+				}
+		}*/ 
+		
 		for (int i = 0; i < innInfo.length; i++) {
 			if (innInfo[i] != null) {
 				System.out.printf("%d: %s, %s \n", i,
 						innInfo[i].getName(), innInfo[i].getEmail());
 				}
-			
+	
 		}
 	}
-
 }

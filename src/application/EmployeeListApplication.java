@@ -29,8 +29,8 @@ public class EmployeeListApplication {
 			System.out.print("Salary: ");
 			// scan.nextLine();
 			salary = scan.nextDouble();
-
-			list.add(employee = new Employee(name, salary, id));
+			employee = new Employee(name, salary, id);
+			list.add(employee);
 		}
 
 		System.out.print("Enter the employee id that will have salary increase : ");

@@ -16,18 +16,18 @@ public class ProductApplication {
 		System.out.print("Quantity in stock: ");
 		int quantity = sc.nextInt();
 		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price);
 		
 		System.out.println("Product Data: " + product);
 		
 		System.out.print("Enter the numer of products to be added in stock: ");
 		stock = sc.nextInt();
-		product.addProductsQuantity(stock);
+		//product.addProductsQuantity(stock);
 		System.out.println("Updated data: " + product);
 		
 		System.out.print("Enter the numer of products to be removed in stock: ");
 		stock = sc.nextInt();
-		product.removeProducts(stock);
+		//product.removeProducts(stock);
 		System.out.println("Updated data: " + product);
 		
 		System.out.print("update the new name and price of product ");

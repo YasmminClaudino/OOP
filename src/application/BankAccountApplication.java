@@ -38,7 +38,7 @@ public class BankAccountApplication {
 
 		System.out.println("Enter a withdraw value: ");
 		value = scan.nextDouble();
-		bankAccount.withdrawal(value);
+		bankAccount.withdraw(value);
 
 		System.out.println("Update account data: \n " + bankAccount);
 

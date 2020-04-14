@@ -42,9 +42,9 @@ public class BankAccount {
 		this.accountBalance += deposit;
 	}
 
-	public void withdrawal(double withdrawal) {
+	public void withdraw(double amount) {
 		int fine = 5;
-		this.accountBalance -= withdrawal + fine;
+		this.accountBalance -= amount + fine;
 	}
 
 	public String toString() {

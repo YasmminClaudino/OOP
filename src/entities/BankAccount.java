@@ -4,8 +4,9 @@ public class BankAccount {
 
 	private int accountNumber;
 	private String holder;
-	private double accountBalance;
+	protected double accountBalance;
 
+	public BankAccount() {}
 	public BankAccount(int accountNumber, String ownerName) {
 		this.accountNumber = accountNumber;
 		this.holder = ownerName;

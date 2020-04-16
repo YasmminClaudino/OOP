@@ -2,8 +2,10 @@ package entities;
 
 public class Employee {
 	private String name;
-	private double grossSalary;
+	protected double grossSalary;
 	private double tax;
+	protected int hours;
+	protected double valuePerHour;
 	private int id;
 	
 	public Employee(String name, double grossSalary, int id) {
@@ -20,8 +22,13 @@ public class Employee {
 		
 	}
 	
+	public Employee(String name, int hours, double valuePerHour) {
+		this.name = name;
+		this.hours = hours;
+		this.valuePerHour = valuePerHour;
+		
+	}
 	
-
 	public double netSalary() {
 		return grossSalary - tax;
 	}
@@ -30,9 +37,14 @@ public class Employee {
 		double increase = grossSalary * (percentagem / 100);
 		grossSalary += increase;
 	}
+	
+	public double payment() {
+		return valuePerHour * hours;
+		
+	}
 
 	public String toString() {
-		return (name + " $" + String.format("%.2f", netSalary()));
+		return (name + " $" + String.format("%.2f", payment()));
 	}
 
 	public String getName() {

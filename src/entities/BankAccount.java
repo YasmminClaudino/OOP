@@ -6,12 +6,14 @@ public class BankAccount {
 	private String holder;
 	protected double accountBalance;
 
-	public BankAccount() {}
+	public BankAccount() {
+	}
+
 	public BankAccount(int accountNumber, String ownerName) {
 		this.accountNumber = accountNumber;
 		this.holder = ownerName;
 	}
-	
+
 	public BankAccount(int accountNumber, String ownerName, double value) {
 		this.accountNumber = accountNumber;
 		this.holder = ownerName;
